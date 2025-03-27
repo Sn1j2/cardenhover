@@ -1,0 +1,95 @@
+img{
+    width: 250px;
+    }
+    
+    .img-wrapper {
+    position: relative;
+    display: block;
+    width: fit-content;
+    }
+    
+
+    
+    
+    .trigger{
+    
+  background-color: blanchedalmond;
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
+
+  bottom: 12px;
+  right: 5px;
+  border-radius: 50px;
+  padding: 6px 15px;
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: aliceblue;
+
+    }
+    
+    .trigger-text{
+    
+        overflow: hidden;
+        width: 0;
+        white-space: nowrap;
+        transition: width 0.3s ease-in-out;
+    }
+
+
+    .trigger-icon{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: red;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .img-wrapper:hover{
+        .trigger{
+            .trigger-text{
+                width: 150px;
+                color: red;
+            }
+            .trigger-icon{
+                color: red;
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .img:hover{
+    
+        .trigger{
+            width: 75px;
+        }
+    
+        .symbol{
+    
+            color: red;
+        }
+    }
+
+    .card{
+        width: 300px;
+        background-color: blanchedalmond;
+        margin: 50px;
+        text-align: center;
+        
+    }
+
+    .card-wrapper{
+        display: flex;
+        margin: 50px;
+        background-color: beige;
+    }
+
+    body{
+        margin: 0;
+        padding: 50px;
+    }
+
+    h3,
+    p{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       
+    }
